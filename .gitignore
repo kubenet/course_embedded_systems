@@ -31,4 +31,6 @@
 *.doc
 *.docs
 *.ppt
-*.pptx
+*.ppt
+# Obsidian #
+*.obsidian

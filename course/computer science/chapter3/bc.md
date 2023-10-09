@@ -1,4 +1,5 @@
-﻿```bash
+#computer_science #bash #practice 
+```bash
 #!/bin/bash
 # scriptbc -- обертка для 'bc’, возвращающая результат вычислений
 if ["$1" = "-p" ] ; then
