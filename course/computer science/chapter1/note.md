@@ -962,3 +962,6 @@ Windows использует файловую систему NTFS (New Technolog
 
 -   Запись вывода команды в файл:  `dir > output.txt`  запишет результат выполнения команды  `dir`  в файл  `output.txt`.
 -   Добавление вывода команды в конец файла:  `echo "Hello, World!" >> output.txt`  добавит в файл  `output.txt`  строку "Hello, World!".
+
+---
+Задания : [[computer science/chapter1/task]]

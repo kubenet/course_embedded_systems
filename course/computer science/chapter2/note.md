@@ -1031,4 +1031,4 @@ monitor_space_usage() {
 monitor_space_usage
 ```
 ----
-
+Задания : [[computer science/chapter2/task]]

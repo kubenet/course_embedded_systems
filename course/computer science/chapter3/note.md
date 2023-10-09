@@ -523,3 +523,7 @@ test (2 entries)                         tmp (0 entries)
 usr (12 entries)                         var (11 entries)
 root@de30378728be:/test#
 ```
+
+---
+
+Задания : [[computer science/chapter3/task]]
