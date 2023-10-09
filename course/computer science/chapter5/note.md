@@ -1,5 +1,5 @@
 # Курс: Информатика
-#computer_science #python #practice
+#computer_science #python #note 
 ## Практическое занятие №5. "Погружение в Python"
 ```python
 import this
