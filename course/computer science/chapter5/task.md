@@ -1,5 +1,5 @@
 # Курс: Информатика
-#computer_science #python #note
+#computer_science #python #practice
 ## Практическое занятие №5. "Погружение в Python"
 
 ### 1. Извлечение и переназначение элементов списка
