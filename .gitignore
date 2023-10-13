@@ -34,3 +34,5 @@
 *.ppt
 # Obsidian #
 *.obsidian
+# trash
+*.trash
