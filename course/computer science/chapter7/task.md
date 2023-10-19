@@ -3,162 +3,160 @@
 
 # Практическое задание №7. " VCSs"
 
-# 1. At the beginning
+# 1. В начале
 
-### 1.1. Config your name and email
+### 1.1. Настройте свое имя и электронную почту
 
 ```bash
 git config --global user.name  "Your Name"
 git config --global user.email your@email.com
 ```
 
-### 1.2. Set caching your password
+### 1.2. Установка кэширования пароля
 
 ```bash
 git config credential.helper 'cache --timeout=3600'
 ```
 
-If you don't set it, you have to enter your username and password every time
-you do "git push". The timeout is set in seconds. After the timeout git will
-ask your username and password again. The command above sets the timeout for
-10 hours.
-
-### 1.3. Clone a git repository from github
+Если вы не установите этот параметр, то вам придется вводить имя пользователя и пароль каждый раз, когда при выполнении команды `git push`. Таймаут задается в секундах. По истечении этого времени `git` снова запросит ваше имя пользователя и пароль. Приведенная выше команда устанавливает тайм-аут на **10 часов**.
+### 1.3. Клонирование git-репозитория с github
 
 ```bash
-git clone https://github.com/yuri-panchul/basics-graphics-music
+git clone https://github.com/kubenet/course_embedded_systems.git
 ```
 
-## 2. The development cycle
+# 2. Цикл разработки
 
-### 2.1. Update your copy of repository files with the changes made by other people
+### 2.1. Обновление своей копии файлов репозитория с учетом изменений, внесенных другими людьми
 
 ```bash
 git pull
 ```
 
-### 2.2. Add new files or directories (recursively)
+### 2.2. Добавление новых файлов или каталогов (рекурсивно)
 
 ```bash
 git add file_or_directory_name
 ```
 
-### 2.3. Edit the files
+### 2.3. Редактирование файлов
 
-### 2.4. Check the status before you check in
+### 2.4. Проверка состояния перед регистрацией
 
-Note changed, added, deleted files.
-Note the files you intended to add but forgot to do it.
+Отмечайте измененные, добавленные, удаленные файлы.
+Отметьте файлы, которые вы собирались добавить, но забыли это сделать.
 
 ```bash
 git status
 ```
 
-### 2.5. Check the differenced against the repository to review your changes in the code
+### 2.5. Сверьте дифферент с репозиторием, чтобы просмотреть свои изменения в коде
 
 ```bash
 git diff
 ```
 
-### 2.6. Make sure not to check in any text with tabs
+### 2.6. Убедитесь, что в тексте нет табуляции
 
-Different editors treats tabs in different ways and many users do not like it.
-Developers should not need to configure the tab width
-of their text editors in order to be able to read the source code.
-There are some exceptions, most notably Makefiles.
-To find the tabs in your text files, you can use the following command:
+Разные редакторы по-разному относятся к вкладкам, и многим пользователям это не нравится.
+Разработчикам не следует настраивать ширину вкладок в своих текстовых редакторах для того, чтобы иметь возможность читать исходный текст.
+Существуют некоторые исключения, в частности, Makefiles.
+Чтобы найти табуляции в текстовых файлах, можно воспользоваться следующей командой:
 
 ```bash
 grep -rlI --exclude-dir=.git --exclude=*.mk $'\t' .
 ```
 
-The meaning of the grep options:
+Значение опций grep:
 
-* -r - recursive
-* -l - file list
-* -I - Ignore binary files
+* -r - рекурсивный
+* -l - список файлов
+* -I - игнорировать двоичные файлы
 
-You can fix the tabs by doing the following, but make sure to review the fixes:
+Вы можете исправить вкладки, выполнив следующие действия, но обязательно просмотрите исправления:
 
 ```bash
 grep -rlI --exclude-dir=.git --exclude=*.mk $'\t' . | xargs sed -i 's/\t/    /g'
 ```
 
-### 2.7. If you want to undo uncommitted changes to a file or a directory, use this command:
+### 2.7. Если вы хотите отменить незафиксированные изменения в файле или каталоге, используйте эту команду:
 
 ```bash
 git checkout file_or_directory_name
 ```
 
-### 2.8. If you want to undo uncommitted changes for all files in the current directory, including uncommitted deletions, use this command:
+### 2.8. Если вы хотите отменить незафиксированные изменения для всех файлов в текущем каталоге, включая незафиксированные удаления, используйте эту команду:
 
 ```bash
 git checkout .
 ```
 
-### 2.9. If you want to undo any commited changes or even pushed changes, ask some power git user or read the git documentation carefully, making sure you understand everything.
+### 2.9. Если вы хотите отменить какие-либо зафиксированные или даже перенесенные изменения, обратитесь к опытному пользователю git или внимательно прочитайте документацию по git, убедившись, что вам все понятно.
 
-### 2.10. After you finish editing, commit
+### 2.10. После завершения редактирования зафиксируйте
 
-Note that -a option automatically stages all modifications and file deletions, but not the additions.
-You need to use 'git add' to add files or directories explicitly.
+Обратите внимание, что опция -a автоматически ставит на очередь все модификации и удаления файлов, но не добавления.
+Для явного добавления файлов или каталогов необходимо использовать 'git add'.
 
-**Important Note 1: Please run "git status" and "git diff" before any commit.
-Undoing committed and especially pushed changes is more difficult than undoing uncommitted changes.**
+**Важное замечание 1: Перед любой фиксацией выполняйте команды "git status" и "git diff".
+Отмена зафиксированных и, особенно, сдвинутых изменений сложнее, чем отмена нефиксированных изменений**.
 
-**Important Note 2: Please put a meaningful comment for each commit.**
+**Важное замечание 2: Пожалуйста, ставьте осмысленный комментарий к каждой фиксации.**
 
 ```bash
 git commit -a -m "A meaningful comment"
 ```
 
-### 2.11. Officially publish all your committed changes in git repository (such as GitHub).
-Now everybody can see your changes.
+### 2.11. Официально опубликуйте все зафиксированные изменения в git-репозитории (например, GitHub).
+Теперь все смогут увидеть ваши изменения.
 
 ```bash
 git push
 ```
 
-## 3. Other practices
+# 3. Другие виды практики
 
-### 3.1. You can browse the repository history on http://github.com itself using web browser interface
+### 3.1. Просмотреть историю репозитория можно на самом сайте http://github.com с помощью интерфейса веб-браузера
 
-### 3.2. If you need Git to ignore some files, put them in .gitignore
+### 3.2. Если вам нужно, чтобы Git игнорировал некоторые файлы, поместите их в .gitignore
 
-Such files may include automatically generated binaries, temporaries,
-or unrelated files you don't want to checkin or to appear in git status.
-Please read about .gitignore in Git documentation before doing it.
+Такие файлы могут включать автоматически сгенерированные двоичные файлы, временные файлы,
+или несвязанные файлы, которые вы не хотите регистрировать или отображать в статусе git.
+Пожалуйста, перед этим прочитайте о .gitignore в документации Git.
 
-### 3.3. If you want to see the files in your tree untracked by Git, use:
+### 3.3. Если вы хотите увидеть файлы в вашем дереве, не отслеживаемые Git'ом, воспользуйтесь командой:
 
 ```bash
 git clean -d -n
 ```
 
-This command works from the current directory all the way down.
+Эта команда работает от текущего каталога вниз.
 
-After reviewing (be careful!), you can remove the files by running:
+После просмотра (будьте внимательны!) вы можете удалить файлы, выполнив команду:
 
 ```bash
 git clean -d -f
 ```
 
-### 3.4. If you want to see the files in your tree ignored by Git
+### 3.4.  Если вы хотите увидеть файлы в вашем дереве, игнорируемые Git'ом
 
-To keep things clean, periodically remove files in the tree,
-ignored by git based on .gitignore list.
-You definitely need to remove them before preparing a release package.
+Для поддержания чистоты периодически удаляйте файлы в дереве,
+игнорируемые git'ом на основании списка .gitignore.
+Их обязательно нужно удалять перед подготовкой релиз-пакета.
 
 ```bash
 git clean -d -x -n
 ```
 
-After reviewing (be careful!), you can remove the files by running:
+После просмотра (будьте внимательны!) вы можете удалить файлы, выполнив команду:
+
 
 ```bash
 git clean -d -x -f
 ```
 
-### 3.5. If you need to do anything non-trivial (merging, undoing committed or pushed changes), please carefully consult Git documentation.
+### 3.5. Если вам необходимо выполнить какие-либо нетривиальные действия (слияние, отмена зафиксированных или перенесенных изменений), внимательно изучите документацию по Git.
 
-Otherwise you may introduce mess, bugs, or checkin some large binary files polluting the repository.
+В противном случае вы можете внести беспорядок, ошибки или проверить большие бинарные файлы, загрязняющие репозиторий.
+
+# 4. Python
