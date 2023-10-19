@@ -29,9 +29,10 @@
 #####################
 *.pdf
 *.doc
-*.docs
+*.docx
 *.ppt
 *.ppt
+*.xlsx
 # Obsidian #
 *.obsidian
 # trash
