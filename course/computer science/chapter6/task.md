@@ -1,4 +1,4 @@
-#computer_science #python #practice 
+q1#computer_science #python #practice 
 # Курс: Информатика
 # Практическое занятие №5. "Основы информатики"
 
