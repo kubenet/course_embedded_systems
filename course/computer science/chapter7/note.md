@@ -214,18 +214,30 @@ def load_reference(name_or_id):
 ### Разное
 
 - **Графические интерфейсы**: существует множество [графических интерфейсов для Git](https://git-scm.com/downloads/guis). Лично мы их не используем и обходимся интерфейсом командной строки.
+
 - **Интеграция с оболочкой**: очень удобно иметь статус Git как часть приглашения оболочки ([zsh](https://github.com/olivierverdier/zsh-git-prompt), [bash](https://github.com/magicmonty/bash-git-prompt)). Часто включается во фреймворки типа [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh).
+
 - **Интеграция с редактором**: аналогично вышеописанному, удобные интеграции с множеством функций. [fugitive.vim](https://github.com/tpope/vim-fugitive) является стандартным для Vim.
+
 - **Рабочие процессы**: мы научили вас модели данных, а также некоторым базовым командам; мы не рассказали вам, какой практики следует придерживаться при работе над большими проектами (а существует [множество](https://nvie.com/posts/a-successful-git-branching-model/) [различных](https://www.endoflineblog.com/gitflow-considered-harmful) [подходов](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)).
+
 - **GitHub**: Git - это не GitHub. На GitHub существует особый способ внесения кода в другие проекты, называемый [pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
+
 - **Другие провайдеры Git**: GitHub не является чем-то особенным: существует множество хостов репозиториев Git, таких как [GitLab](https://about.gitlab.com/) и [BitBucket](https://bitbucket.org/).
 
 ### Ресурсы
 Настоятельно **рекомендуется к прочтению книга** [Pro Git](https://git-scm.com/book/en/v2). Пройдя главы 1-5, вы узнаете большую часть того, что необходимо для квалифицированного использования **Git**'а, после того как поймете модель данных. В последующих главах содержится интересный, продвинутый материал.
+
 [Oh Shit, Git!?!](https://ohshitgit.com/) - краткое руководство по восстановлению после некоторых распространенных ошибок Git.
+
 [Git for Computer Scientists](https://eagain.net/articles/git-for-computer-scientists/) - краткое объяснение модели данных Git'а, содержащее меньше псевдокода и больше причудливых диаграмм, чем эти конспекты лекций.
+
 [Git from the Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up/) - подробное объяснение деталей реализации Git'а, выходящих за рамки модели данных, для любознательных.
 [Как объяснить git простыми словами](https://smusamashah.github.io/blog/2017/10/14/explain-git-in-simple-words)
+
+
+
 [Learn Git Branching](https://learngitbranching.js.org/) - браузерная игра, обучающая работе с Git.
+
 ### Упражнения
 Если у вас нет опыта работы с **Git**, попробуйте прочитать первые пару глав книги [**Pro Git**](https://git-scm.com/book/en/v2) или изучите учебник типа [**Learn Git Branching**](https://learngitbranching.js.org/). В процессе работы над ним увязывайте команды Git с моделью данных.
