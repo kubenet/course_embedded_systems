@@ -5,7 +5,7 @@
 
 
 
-![image][images/snake.png]
+![image](images/snake.png)
 
 
 Цель работы:
