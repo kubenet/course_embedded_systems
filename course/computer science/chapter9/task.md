@@ -56,19 +56,24 @@ class Queue:
 
     def is_empty(self):
 
-    def enqueue(self, item):
-
+    def enqueue(self, item, priority=5):
+		# call sort after each new item
     def dequeue(self):
 
     def front(self):
 
     def size(self):
 
+    def sort_queue(self):
+        # Sort the queue based on priority (ascending order)
+        self.items.sort()
+
+# Example usage:
 my_queue = Queue()
 
-my_queue.enqueue(1)
-my_queue.enqueue(2)
-my_queue.enqueue(3)
+my_queue.enqueue(1, priority=2)
+my_queue.enqueue(2, priority=5)
+my_queue.enqueue(3, priority=0)
 
 print("Queue:", my_queue.items)
 
@@ -80,11 +85,16 @@ print("Dequeued item:", dequeued_item)
 front_item = my_queue.front()
 print("Front item:", front_item)
 
+# Enqueue a new item with priority
+my_queue.enqueue(4, priority=3)
+print("Queue after enqueue:", my_queue.items)
+
 # Check if the queue is empty
 print("Is queue empty?", my_queue.is_empty())
 
 # Get the size of the queue
 print("Queue size:", my_queue.size())
+
 
 ```
 ## Linked List 
@@ -104,9 +114,9 @@ class LinkedList:
     def is_empty(self):
 
     def append(self, data):
-
+	
     def prepend(self, data):
-
+	# takes the value and insert it between the head and the next value in the linked list
     def delete(self, data):
 
     def display(self):
@@ -128,71 +138,6 @@ my_linked_list.delete(2)
 
 my_linked_list.display()
 ```
-## Tree
-
-Вам необходимо реализовать `Tree` на языке Python, включая основные методы для манипуляции данными внутри `Tree`. Ваша цель - создать класс Python с именем `Tree`:
-
-
-```python
-class Node:
-    def __init__(self, key):
-        self.key = key
-        self.left = None
-        self.right = None
-
-class BinaryTree:
-    def __init__(self):
-        self.root = None
-
-    def insert(self, key):
-
-
-    def _insert_recursive(self, root, key):
-        if key < root.key:
-            if root.left is None:
-                root.left = Node(key)
-            else:
-                self._insert_recursive(root.left, key)
-        elif key > root.key:
-            if root.right is None:
-                root.right = Node(key)
-            else:
-                self._insert_recursive(root.right, key)
-
-    def search(self, key):
-        return self._search_recursive(self.root, key)
-
-    def _search_recursive(self, root, key):
-        if root is None or root.key == key:
-            return root
-        if key < root.key:
-            return self._search_recursive(root.left, key)
-        return self._search_recursive(root.right, key)
-
-    def inorder_traversal(self):
-
-
-# Example usage:
-tree = BinaryTree()
-tree.insert(50)
-tree.insert(30)
-tree.insert(20)
-tree.insert(40)
-tree.insert(70)
-tree.insert(60)
-tree.insert(80)
-
-print("Inorder Traversal:", tree.inorder_traversal())
-
-# Searching for a key
-key_to_search = 40
-result_node = tree.search(key_to_search)
-if result_node:
-    print(f"Key {key_to_search} found in the tree.")
-else:
-    print(f"Key {key_to_search} not found in the tree.")
-```
-
 ## Unorder map
 
 Вам необходимо реализовать `Unorder map` на языке Python, включая основные методы для манипуляции данными внутри `Unorder map`. Ваша цель - создать класс Python с именем `Unorder map`:
