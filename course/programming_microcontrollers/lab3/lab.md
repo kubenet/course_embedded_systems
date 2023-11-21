@@ -27,23 +27,71 @@
 ```C++
 #include <Tone.h>
 //https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/
+  
 
-Tone tone1;
+int notes[] = { 
+NOTE_A3,
+NOTE_B3,
+NOTE_C4,
+NOTE_D4,
+NOTE_E4,
+NOTE_F4,
+NOTE_G4 };
+  
 
-void setup()
+// You can declare the tones as an array
+
+Tone notePlayer[2];
+
+void setup(void)
 {
-	tone1.begin(13);
-	Serial.begin(9600);
+Serial.begin(9600);
+notePlayer[0].begin(11);
+notePlayer[1].begin(12);
 }
 
-void loop()
+void loop(void)
 {
-	tone1.play(NOTE_A4);
-	int sensorValue = analogRead(13);
-	// Print the analog value to the Serial Monitor
-	Serial.print("Analog Value: ");
-	Serial.println(sensorValue);
-	delay(100); // Adjust the delay as needed
+	char c;  
+	if(Serial.available())
+	{
+		c = Serial.read();
+		switch(c)
+		{
+			case 'a'...'g':
+				notePlayer[0].play(notes[c - 'a']);
+				int sensorValue = analogRead(11);
+				Serial.print("Analog Value: ");
+				Serial.println(sensorValue);
+				Serial.print("Note Value: ");
+				Serial.println(notes[c - 'a']);
+				break;
+			case 's':
+				notePlayer[0].stop();
+				break; 
+			case 'A'...'G':
+				notePlayer[1].play(notes[c - 'A']);
+				int sensorValueUpper = analogRead(11);
+				Serial.print("Analog Value (Upper): ");
+				Serial.println(sensorValueUpper);
+				Serial.print("Note Value: ");
+				Serial.println(notes[c - 'A']);
+				break;
+			case 'S':
+				notePlayer[1].stop();
+				break;  
+			default:
+				notePlayer[1].stop();
+				notePlayer[0].play(NOTE_B2);
+				delay(300);
+				notePlayer[0].stop();
+				delay(100);
+				notePlayer[1].play(NOTE_B2);
+				delay(300);
+				notePlayer[1].stop();
+			break;
+		}
+	}
 }
 ```
 
