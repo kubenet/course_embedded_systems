@@ -101,6 +101,6 @@
 * [Сообщество AVR Freaks](https://www.avrfreaks.net/)
 * [Ардуино в C | Встроенная свобода](https://balau82.wordpress.com/arduino-in-c/)
 * [Программирование Arduino на «чистом C»](http://audiodiwhy.blogspot.com/2019/01/programming-arduino-in-pure-c-now-were.html)
-* [EMBEDDS: Учебные пособия по AVR] (https://embedds.com/avr-tutorials/)
+* [EMBEDDS: Учебные пособия по AVR](https://embedds.com/avr-tutorials/)
 * [CCRMA: AVR](https://ccrma.stanford.edu/wiki/AVR#AVR_Microcontrollers)
 * [Руководства по электронике и программированию Efundies: AVR] (https://efundies.com/avr/)
