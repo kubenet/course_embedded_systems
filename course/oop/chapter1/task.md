@@ -9,6 +9,85 @@
 **Метод**: вывод информации о пробеге автомобиля.
 **Конструктор**: принимает все поля.
 **Деструктор**: выводит сообщение о том, что объект "Автомобиль" уничтожен.
+
+```c++
+#include <cstring>
+#include <iostream>
+
+class Car
+{
+private:
+   char   *make;
+   char   *model;
+   int    year;
+   double mileage;
+
+public:
+   // Constructor
+   Car(const char *make, const char *model, int year, double mileage)
+      : year(year)
+      , mileage(mileage)
+   {
+      this->make = new char[strlen(make) + 1];
+      strcpy(this->make, make);
+      this->model = new char[strlen(model) + 1];
+      strcpy(this->model, model);
+   }
+
+   // Copy Constructor
+   Car(const Car &other)
+      : year(other.year)
+      , mileage(other.mileage)
+   {
+      make = new char[strlen(other.make) + 1];
+      strcpy(make, other.make);
+      model = new char[strlen(other.model) + 1];
+      strcpy(model, other.model);
+   }
+
+   // Destructor
+   ~Car()
+   {
+      delete[] make;
+      delete[] model;
+      std::cout << "Car object has been destroyed." << std::endl;
+   }
+
+
+   // Method to output vehicle mileage information
+   void displayMileage() const
+   {
+      std::cout << "Vehicle " << make << " " << model << " (" << year << ") has "
+                << mileage << " miles." << std::endl;
+   }
+
+    // Setter for mileage: Updates the mileage of the car.
+   void setMileage(double newMileage) 
+   {
+     mileage = newMileage;
+   }
+};
+
+
+int main()
+{
+   // Direct creation
+   Car car1("Toyota", "Corolla", 2020, 15000.0);
+
+   car1.displayMileage();
+
+   // Using copy constructor
+   Car car2 = car1;
+   car2.setMileage(10000.0);
+   car2.displayMileage();
+   car1.displayMileage();
+
+   return(0);
+}
+
+}
+
+```
 ### Студент
 **Поля**: имя, возраст, номер студенческого билета, оценки.
 **Метод**: подсчет и вывод среднего балла.
