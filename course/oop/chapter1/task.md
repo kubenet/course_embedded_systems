@@ -4,7 +4,15 @@
 
 # Задания
 Необходимо реализовать классы для следующих объектов
+
+# Инструменты 
+
+https://www.onlinegdb.com/
+https://www.programiz.com/cpp-programming/online-compiler/
+https://onecompiler.com/cpp
+https://replit.com/new/cpp
 ###  Автомобиль
+
 **Поля**: марка, модель, год выпуска, пробег.
 **Метод**: вывод информации о пробеге автомобиля.
 **Конструктор**: принимает все поля.
