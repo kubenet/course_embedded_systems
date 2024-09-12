@@ -1,14 +1,7 @@
 # Курс:  Информатика
 #computer_science #bash #note
 # Практическое занятие №3. "Сценарии оболочки"
-- [[#Как использовать команды|Как использовать команды]]
-- [[#Поиск файлов|Поиск файлов]]
-- [[#Поиск слов|Поиск слов]]
-- [[#Поиск shell команд|Поиск shell команд]]
-- [[#Навигация по каталогам|Навигация по каталогам]]
-- [[#PATH|PATH]]
-- [[#Усовершенствование пользовательских команд|Усовершенствование пользовательских команд]]
-	- [[#Усовершенствование пользовательских команд#Резервное копированией файлов при удалении|Резервное копированией файлов при удалении]]
+
 ---
 До сих пор мы видели, как выполнять команды в оболочке и соединять их по конвейеру.
 Однако во многих сценариях вам потребуется выполнить ряд команд и использовать выражения потока управления, такие как условные выражения или циклы.
@@ -169,21 +162,19 @@ for arg in reversed(sys.argv[1:]):
 
 ## Как использовать команды
 
-At this point, you might be wondering how to find the flags for the commands in the aliasing section such as `ls -l`, `mv -i` and `mkdir -p`.
-More generally, given a command, how do you go about finding out what it does and its different options?
-You could always start googling, but since UNIX predates StackOverflow, there are built-in ways of getting this information.
+На данный момент вы, возможно, задаетесь вопросом, как найти флаги для команд из раздела aliasing, таких как `ls -l`, `mv -i` и `mkdir -p`.
+И вообще, если вам дана команда, как узнать, что она делает и каковы ее различные опции?
+Вы всегда можете начать гуглить, но поскольку UNIX появился еще до появления StackOverflow, существуют встроенные способы получения этой информации.
 
-As we saw in the shell lecture, the first-order approach is to call said command with the `-h` or `--help` flags. A more detailed approach is to use the `man` command.
-Short for manual, [`man`](https://www.man7.org/linux/man-pages/man1/man.1.html) provides a manual page (called manpage) for a command you specify.
-For example, `man rm` will output the behavior of the `rm` command along with the flags that it takes, including the `-i` flag we showed earlier.
-In fact, what I have been linking so far for every command is the online version of the Linux manpages for the commands.
-Even non-native commands that you install will have manpage entries if the developer wrote them and included them as part of the installation process.
-For interactive tools such as the ones based on ncurses, help for the commands can often be accessed within the program using the `:help` command or typing `?`.
+Как мы видели в лекции по shell, первый способ - вызвать команду с флагами `-h` или `--help`. Более подробный подход заключается в использовании команды `man`.
+Сокращенно от manual, [`man`](https://www.man7.org/linux/man-pages/man1/man.1.html) предоставляет страницу руководства (называемую manpage) для указанной вами команды.
+Например, `man rm` выведет поведение команды `rm` вместе с флагами, которые она принимает, включая флаг `-i`, который мы показывали ранее.
+Фактически, то, на что я ссылался до сих пор для каждой команды, - это онлайн-версии руководств Linux по этим командам.
+Даже неродные команды, которые вы устанавливаете, будут иметь записи в manpage, если разработчик написал их и включил в процесс установки.
+Для интерактивных инструментов, например, основанных на ncurses, справку по командам часто можно получить внутри программы, используя команду `:help` или набрав `?`.
 
-Sometimes manpages can provide overly detailed descriptions of the commands, making it hard to decipher what flags/syntax to use for common use cases.
-[TLDR pages](https://tldr.sh/) are a nifty complementary solution that focuses on giving example use cases of a command so you can quickly figure out which options to use.
-For instance, I find myself referring back to the tldr pages for [`tar`](https://tldr.inbrowser.app/pages/common/tar) and [`ffmpeg`](https://tldr.inbrowser.app/pages/common/ffmpeg) way more often than the manpages.
-
+Иногда в manpages можно найти слишком подробное описание команд, что затрудняет расшифровку того, какие флаги/синтаксис следует использовать в обычных случаях.
+[TLDR-страницы](https://tldr.sh/) - это удобное дополнительное решение, которое фокусируется на
 
 ## Поиск файлов
 
@@ -227,7 +218,6 @@ find . -name '*.png' -exec convert {} {}.jpg \;
 Более подробное сравнение можно найти [здесь] (https://unix.stackexchange.com/questions/60205/locate-vs-find-usage-pros-and-cons-of-each-other).
 
 ## Поиск слов
-
 
 Поиск файлов по имени полезен, но довольно часто вам нужно искать по *содержимому* файла.
 Распространенным сценарием является поиск всех файлов, содержащих некоторый шаблон, а также место, где в этих файлах встречается этот шаблон.
@@ -284,15 +274,14 @@ Fasd ранжирует файлы и каталоги по [_frecency_](https:/
 Существуют более сложные инструменты для быстрого получения обзора структуры каталогов: [`tree`](https://linux.die.net/man/1/tree), [`broot`](https://github.com/Canop/broot) или даже полноценные файловые менеджеры, такие как [`nnn`](https://github.com/jarun/nnn) или [`ranger`](https://github.com/ranger/ranger).
 
 ## PATH
+
 После запуска операционной системы пользователю доступны различные инструменты, как системные (входящие в состав ОС), так и сторонние (установленные дополнительно). Часто в процессе работы возникает необходимость использования командной строки для вызова различных утилит, помогающих в процессе работы. Например, в случае, когда браузеру не удается открыть страницу удаленного веб-сервиса: зайти на почту или открыть новостную ленту, мы можем наблюдать следующую ошибку — "404 NotFound". Чтобы определить, на чьей стороне ошибка: вашей сети или удаленного сервера, часто используют системные утилиты, консоли для работы с сетью. Такие как PING, IPCONFIG, ARP, NETSTAT и т.д.
 
-В Linux (также UNIX)  **$PATH**  — это переменная среды, используемая для указания оболочке, где искать исполняемые файлы.  **$PATH**  обеспечивает большую гибкость и безопасность для систем  [**Linux**](https://blog.sedicomm.com/2018/01/21/kak-ustanovit-golang-yazyk-programmirovaniya-go-v-linux/), и, безусловно, можно сказать, что это одна из самых важных переменных среды.
+В Linux (также UNIX)  **`$PATH`**  — это переменная среды, используемая для указания оболочке, где искать исполняемые файлы.  **`$PATH`**  обеспечивает большую гибкость и безопасность для систем  [**Linux**](https://blog.sedicomm.com/2018/01/21/kak-ustanovit-golang-yazyk-programmirovaniya-go-v-linux/), и, безусловно, можно сказать, что это одна из самых важных переменных среды.
 
-Программы/скрипты, расположенные в каталоге  **$PATH**, могут быть выполнены непосредственно в вашей оболочке без указания полного пути к ним.
+Программы/скрипты, расположенные в каталоге  **`$PATH`**, могут быть выполнены непосредственно в вашей оболочке без указания полного пути к ним.
 
-> Чтобы выяснить путь к домашнему каталогу, дайте команду `echo $HOME`, кото-
-рая выведет в окне терминала полный путь. Перейдите в указанный каталог
-и создайте папку для разрабатываемых сценариев (`scripts`). Затем добавьте эту папку в свой сценарий входа, для чего откройте файл сценария в текстовом редакторе и добавьте в начало файла следующую строку, заменив /path/to/scripts/ на путь к папке с вашими сценариями:
+> Чтобы выяснить путь к домашнему каталогу, дайте команду `echo $HOME`, которая выведет в окне терминала полный путь. Перейдите в указанный каталог и создайте папку для разрабатываемых сценариев (`scripts`). Затем добавьте эту папку в свой сценарий входа, для чего откройте файл сценария в текстовом редакторе и добавьте в начало файла следующую строку, заменив /path/to/scripts/ на путь к папке с вашими сценариями:
 > `export PATH="/path/to/scripts/:$PATH"`
 ```bash
 root@de30378728be:/test# echo $PATH
