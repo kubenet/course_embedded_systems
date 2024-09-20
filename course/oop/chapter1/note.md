@@ -1,5 +1,5 @@
 # Курс: ООП
-#computer_science #bash #note
+#oop #note
 
 # Практическое занятие №1. "Класс"
 
