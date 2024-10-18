@@ -707,8 +707,8 @@ dll.display_reverse()  # Ожидаемый вывод: 3 <-> 1 <-> 0 <-> None
     - Реализуйте класс `AVLNode`, который будет представлять узел AVL-дерева. Узел должен содержать:
         - `data`: данные узла (может быть любого типа).
         - `height`: высота узла (по умолчанию `1`).
-        - `left`: ссылка на левое дочернее узло (по умолчанию `None`).
-        - `right`: ссылка на правое дочернее узло (по умолчанию `None`).
+        - `left`: ссылка на левый дочерний узел (по умолчанию `None`).
+        - `right`: ссылка на правый дочерний узел (по умолчанию `None`).
 - **Класс `AVLTree`**:
     - Реализуйте класс `AVLTree`, который будет предоставлять методы для работы с AVL-деревом:
         - `insert(data)`: добавляет новый узел в дерево и выполняет балансировку.
@@ -815,8 +815,8 @@ while not pq.is_empty():
     
     - Реализуйте класс `TreeNode`, который будет представлять узел бинарного дерева. Узел должен содержать:
         - `data`: данные узла (может быть любого типа).
-        - `left`: ссылка на левое дочернее узло (по умолчанию `None`).
-        - `right`: ссылка на правое дочернее узло (по умолчанию `None`).
+        - `left`: ссылка на левый дочерний узел (по умолчанию `None`).
+        - `right`: ссылка на правый дочерний узел (по умолчанию `None`).
 - **Класс `BinarySearchTree`**:
     
     - Реализуйте класс `BinarySearchTree`, который будет предоставлять методы для работы с BST:
@@ -851,8 +851,6 @@ class BinarySearchTree:
     def in_order_traversal(self):
 	    pass
 
-
-
 # Пример использования
 bst = BinarySearchTree()
 bst.insert(10)
@@ -883,17 +881,17 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
-	def linked_list(*values):
-		pass
+def linked_list(*values):
+	pass
 	
-	def print_linked_list(linked_list):
-		pass
+def print_linked_list(linked_list):
+	pass
 	
-	def swap_nodes(list_pointer1, index1, list_pointer2, index2):
-		pass
+def swap_nodes(list_pointer1, index1, list_pointer2, index2):
+	pass
 	
-	def get_node_and_prev(linked_list, index):
-		pass
+def get_node_and_prev(linked_list, index):
+	pass
 
 # Example usage
 list1 = linked_list(1, 2, 3, 4)
@@ -1074,6 +1072,5 @@ while current:
     print(current.data, end=" -> ")
     current = current.next
 # Output: 2 -> 3 ->
-
 ```
 
