@@ -1,7 +1,7 @@
 #oop 
 
 
-> Умные указатели [тык](https://habr.com/ru/companies/piter/articles/706866/)и [тык]
+> Умные указатели [тык](https://habr.com/ru/companies/piter/articles/706866/)и [тык](https://en.cppreference.com/book/intro/smart_pointers)
 
 **Данное задание выдается на неделю**.
 ## Пример
@@ -350,7 +350,6 @@ int main() {
 
     return 0;
 }
-
 ```
 
 ## Зоопарк 
