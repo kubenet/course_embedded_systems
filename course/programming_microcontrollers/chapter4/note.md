@@ -36,9 +36,10 @@
 - [PlatformIO](https://platformio.org/): Замена Arduino IDE: Обзор возможностей PlatformIO как более мощного инструмента для разработки.
 - [Программирование Arduino и AVR на Ассемблере](https://dumblebots.com/2022/07/31/programming-arduino-and-avr-microcontrollers-using-the-assembly-language/): Статья о программировании микроконтроллеров на Ассемблере.
 - [AVR Libc](https://www.nongnu.org/avr-libc/)
-* [Сообщество AVR Freaks](https://www.avrfreaks.net/)
-* [Ардуино в C | Встроенная свобода](https://balau82.wordpress.com/arduino-in-c/)
-* [Программирование Arduino на «чистом C»](http://audiodiwhy.blogspot.com/2019/01/programming-arduino-in-pure-c-now-were.html)
-* [EMBEDDS: Учебные пособия по AVR](https://embedds.com/avr-tutorials/)
-* [CCRMA: AVR](https://ccrma.stanford.edu/wiki/AVR#AVR_Microcontrollers)
-* [Руководства по электронике и программированию Efundies: AVR](https://efundies.com/avr/)
+- [Сообщество AVR Freaks](https://www.avrfreaks.net/)
+- [Ардуино в C | Встроенная свобода](https://balau82.wordpress.com/arduino-in-c/)
+- [Программирование Arduino на «чистом C»](http://audiodiwhy.blogspot.com/2019/01/programming-arduino-in-pure-c-now-were.html)
+- [EMBEDDS: Учебные пособия по AVR](https://embedds.com/avr-tutorials/)
+- [CCRMA: AVR](https://ccrma.stanford.edu/wiki/AVR#AVR_Microcontrollers)
+- [Руководства по электронике и программированию Efundies: AVR](https://efundies.com/avr/)
+- [Platformio-docs-flags](https://github.com/platformio/platformio-docs/blob/develop/projectconf/sections/env/options/build/build_flags.rst)
