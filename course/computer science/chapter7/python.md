@@ -1,0 +1,1 @@
+Серия статьей на хабре про клоллекции в python [1](https://habr.com/ru/articles/319164/) [2](https://habr.com/ru/articles/319164/#2)[3](https://habr.com/ru/articles/319164/#3)[4](https://habr.com/ru/articles/319164/#4)
