@@ -1,23 +1,24 @@
-| student                           | github                               | project | cp1   | cp2 | grade |
-| --------------------------------- | ------------------------------------ | ------- | ----- | --- | ----- |
-| Абдишукуров Мурат Талайбекович    | https://github.com/Murat194          | lab     | 66/67 |     |       |
-| Астафьев Антон Вадимович          | https://github.com/Viper3066         | lab     | 0/67  |     |       |
-| Бабанский Никита Сергеевич        | https://github.com/uphowshelet       | lab     | 0/67  |     |       |
-| Багичев Артём Дмитриевич          | https://github.com/MegaGameDoctor    | project | 0/67  |     |       |
-| Войцеховский Даниил Игоревич      |                                      | -       | 0/67  |     |       |
-| Габдулхаков Айдар Марселевич      |                                      | lab     | 0/67  |     |       |
-| Горбунов Семён Александрович      | https://github.com/Semyon13-gor      | project | 0/67  |     |       |
-| Емельянов Евгений Витальевич      | https://github.com/Tortyzzz          | lab     | 0/67  |     |       |
-| Ерошкин Артем Алексеевич          | https://github.com/ArtemE54          | project | 0/67  |     |       |
-| Зальцман Злата Матвеевна          |                                      | lab     | 0/67  |     |       |
-| Ибрагимова Виктория Тимуровна     |                                      | lab     | 0/67  |     |       |
-| Кондрашина Ангелина Александровна |                                      | -       | 0/67  |     |       |
-| Ли Леонид Олегович                |                                      | proj    | 0/67  |     |       |
-| Лунин Александр Юрьевич           | https://github.com/xxxxxneonxxxxx    | proj    | 0/67  |     |       |
-| Милушкин Захар Владимирович       |                                      | proj    | 0/67  |     |       |
-| **Полянская Полина Михайловна**   | https://github.com/Toff-u            | proj    | 0/67  |     |       |
-| Поснов Владислав Александрович    | https://github.com/gard3nz           | lab     | 0/67  |     |       |
-| Протопопов Алексей Иванович       | https://github.com/AlekseyProtopopov | lab     | 0/67  |     |       |
-| Суровцев Александр Константинович |                                      | -       | 0/67  |     |       |
-| Тюков Тимур Айдарович             |                                      | -       | 0/67  |     |       |
-| Чайкина Татьяна Евгеньевна        | https://github.com/Tatiana-Chaykina  | proj    | 0/67  |     |       |
+
+| student                           | github                               | project                                                                                                | cp1   | cp2 | grade |
+| --------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------ | ----- | --- | ----- |
+| Абдишукуров Мурат Талайбекович    | https://github.com/Murat194          | lab                                                                                                    | 66/67 |     |       |
+| Астафьев Антон Вадимович          | https://github.com/Viper3066         | lab                                                                                                    | 61/67 |     |       |
+| Бабанский Никита Сергеевич        | https://github.com/uphowshelet       | lab                                                                                                    | 59/67 |     |       |
+| Багичев Артём Дмитриевич          | https://github.com/MegaGameDoctor    | [PixcelBattle](https://github.com/MegaGameDoctor/PixelBattle-Tusur)                                    | 53/67 |     |       |
+| Войцеховский Даниил Игоревич      | -                                    | -                                                                                                      | 0/67  |     |       |
+| Габдулхаков Айдар Марселевич      | -                                    | lab                                                                                                    | 0/67  |     |       |
+| Горбунов Семён Александрович      | https://github.com/Semyon13-gor      | lab                                                                                                    | 61/67 |     |       |
+| Емельянов Евгений Витальевич      | https://github.com/Tortyzzz          | lab                                                                                                    | 51/67 |     |       |
+| Ерошкин Артем Алексеевич          | https://github.com/ArtemE54          | lab                                                                                                    | 39/67 |     |       |
+| Зальцман Злата Матвеевна          | -                                    | lab                                                                                                    | 0/67  |     |       |
+| Ибрагимова Виктория Тимуровна     | -                                    | lab                                                                                                    | 0/67  |     |       |
+| Кондрашина Ангелина Александровна | -                                    | -                                                                                                      | 0/67  |     |       |
+| Ли Леонид Олегович                | -                                    | lab                                                                                                    | 0/67  |     |       |
+| Лунин Александр Юрьевич           | https://github.com/xxxxxneonxxxxx    | [Meganum](https://github.com/xxxxxneonxxxxx/LuninAlexander-194-game-practice/tree/main/game%20project) | 62/67 |     |       |
+| Милушкин Захар Владимирович       | -                                    | lab                                                                                                    | 0/67  |     |       |
+| **Полянская Полина Михайловна**   | https://github.com/Toff-u            | [punk](https://github.com/Toff-u/That-level-school)                                                    | 38/67 |     |       |
+| Поснов Владислав Александрович    | https://github.com/gard3nz           | lab                                                                                                    | 45/67 |     |       |
+| Протопопов Алексей Иванович       | https://github.com/AlekseyProtopopov | lab                                                                                                    | 52/67 |     |       |
+| Суровцев Александр Константинович | -                                    | -                                                                                                      | 0/67  |     |       |
+| Тюков Тимур Айдарович             | -                                    | -                                                                                                      | 0/67  |     |       |
+| Чайкина Татьяна Евгеньевна        | https://github.com/Tatiana-Chaykina  | [proj](https://github.com/users/Tatiana-Chaykina/projects/1/views/1)                                   | 0/67  |     |       |
