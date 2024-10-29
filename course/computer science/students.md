@@ -11,7 +11,7 @@
 | Емельянов Евгений Витальевич      | https://github.com/Tortyzzz          | lab                                                                                                    | 51/57 |     |       |
 | Ерошкин Артем Алексеевич          | https://github.com/ArtemE54          | lab                                                                                                    | 39/57 |     |       |
 | Зальцман Злата Матвеевна          | https://github.com/Zlata-zal         | lab                                                                                                    | 56/57 |     |       |
-| Ибрагимова Виктория Тимуровна     | -                                    | lab                                                                                                    | 0/57  |     |       |
+| Ибрагимова Виктория Тимуровна     | https://github.com/Ibragisha         | lab                                                                                                    | 61/57 |     |       |
 | Кондрашина Ангелина Александровна | -                                    | -                                                                                                      | 0/57  |     |       |
 | Ли Леонид Олегович                | -                                    | lab                                                                                                    | 0/57  |     |       |
 | Лунин Александр Юрьевич           | https://github.com/xxxxxneonxxxxx    | [Meganum](https://github.com/xxxxxneonxxxxx/LuninAlexander-194-game-practice/tree/main/game%20project) | 62/57 |     |       |
