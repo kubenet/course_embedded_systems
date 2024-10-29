@@ -14,6 +14,6 @@
 | **Никитина Кристина Евгеньевна** | https://github.com/christossik333 | lab                                                                                               | 23/26 |     |       |
 | Першина Софья Алексеевна         | https://github.com/Sofia132454    | lab                                                                                               | 9/26  |     |       |
 | Садыков Руслан Александрович     | https://github.com/Fantichoop     | lab                                                                                               | 18/26 |     |       |
-| Сень Вера Константиновна         |                                   | lab                                                                                               | 0/26  |     |       |
+| Сень Вера Константиновна         | https://github.com/Ver04ka/       | [Теплица](https://github.com/Ver04ka/-)                                                           | 9/26  |     |       |
 | Табакаев Никита Александрович    | https://github.com/root-kidik     | [Планировщик задач для МК](https://github.com/root-kidik/usheduler)                               | 16/26 |     |       |
 | Фещуков Владислав Алексеевич     | https://github.com/Vladislav-fesc | [Умный дом](https://github.com/Vladislav-fesc/Smart-home-system-on-Arduino)                       | 17/26 |     |       |
