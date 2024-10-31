@@ -6,7 +6,7 @@ Python имеет встроенную поддержку SQLite базы дан
 import sqlite3
 ```    
 
-- Скачаем тестовую базу данных, с которой будем работать. В данной статье будет использоваться открытая (MIT лицензия) тестовая база данных “Chinook”. Скачать ее можно с репозитория:  
+- Скачаем тестовую базу данных, с которой будем работать. На данном занятии будет использоваться открытая (MIT лицензия) тестовая база данных “Chinook”. Скачать ее можно с репозитория:  
 - [github.com/lerocha/chinook-database](https://github.com/lerocha/chinook-database) 
 - бинарный файл [Chinook_Sqlite.sqlite](https://github.com/lerocha/chinook-database/blob/master/ChinookDatabase/DataSources/Chinook_Sqlite.sqlite)  
     
