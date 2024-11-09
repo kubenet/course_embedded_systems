@@ -20,7 +20,7 @@
 
 или
 
-![image](images/qr-code.png)
+![image](chapter1/images/qr-code.png)
 # Задание на семестр:
 
 | Студент     | Группа | Проект              | Результат |
