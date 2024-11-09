@@ -20,7 +20,7 @@
 
 или
 
-![alt](images/qr-code.png)
+![image](images/qr-code.png)
 # Задание на семестр:
 
 | Студент     | Группа | Проект              | Результат |
