@@ -4,7 +4,8 @@
 # Snake
 
 
-![alt][images/3bb0e4b2a10d11ef8fae1690387607a1_1.jpg]
+![alt](images/3bb0e4b2a10d11ef8fae1690387607a1_1.jpg)
+
 
 **Framework - Arduino**
 
