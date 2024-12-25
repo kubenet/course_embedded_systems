@@ -17,3 +17,6 @@
 | Сень Вера Константиновна         | https://github.com/Ver04ka/       | lab                                                                         | 9/26  | 11   |      |      |      |     |       |
 | Табакаев Никита Александрович    | https://github.com/root-kidik     | [Планировщик задач для МК](https://github.com/root-kidik/usheduler)         | 16/26 | 6    |      |      |      |     |       |
 | Фещуков Владислав Алексеевич     | https://github.com/Vladislav-fesc | [Умный дом](https://github.com/Vladislav-fesc/Smart-home-system-on-Arduino) | 17/26 | 14   |      |      |      |     |       |
+
+
+Форма для обратной связи [тык](https://forms.yandex.ru/u/676b674a02848f66a17e91a8/)
