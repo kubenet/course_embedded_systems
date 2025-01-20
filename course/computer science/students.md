@@ -6,7 +6,7 @@
 | Бабанский Никита Сергеевич        | https://github.com/uphowshelet       | lab                                                                                                    | 59/57 | 3/3 |       |
 | Багичев Артём Дмитриевич          | https://github.com/MegaGameDoctor    | [PixcelBattle](https://github.com/MegaGameDoctor/PixelBattle-Tusur)                                    | 53/57 | **5**  |       |
 | Войцеховский Даниил Игоревич      | -                                    | -                                                                                                      | 0/57  | 0/3 |       |
-| Габдулхаков Айдар Марселевич      | -                                    | lab                                                                                                    | 0/57  | 0/3 |       |
+| Габдулхаков Айдар Марселевич      | https://github.com/wiked602          | lab                                                                                                    | 0/57  | *2/3* |       |
 | Горбунов Семён Александрович      | https://github.com/Semyon13-gor      | lab                                                                                                    | 61/57 | 3/3 |       |
 | Емельянов Евгений Витальевич      | https://github.com/Tortyzzz          | lab                                                                                                    | 51/57 | 3/3 |       |
 | Ерошкин Артем Алексеевич          | https://github.com/ArtemE54          | lab                                                                                                    | 39/57 | 3/3 |       |
