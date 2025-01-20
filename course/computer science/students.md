@@ -21,4 +21,4 @@
 | Протопопов Алексей Иванович       | https://github.com/AlekseyProtopopov | lab                                                                                                    | 52/57 | 0/3 |       |
 | Суровцев Александр Константинович | -                                    | -                                                                                                      | 0/57  | 0/3 |       |
 | Тюков Тимур Айдарович             | -                                    | -                                                                                                      | 0/57  | 0/3 |       |
-| Чайкина Татьяна Евгеньевна        | https://github.com/Tatiana-Chaykina  | [proj](https://github.com/users/Tatiana-Chaykina/projects/1/views/1)                                   | 0/57  | 0/3 |       |
+| Чайкина Татьяна Евгеньевна        | https://github.com/Tatiana-Chaykina  | [proj](https://github.com/users/Tatiana-Chaykina/projects/1/views/1)                                   | 0/57  | 3/3 |       |
